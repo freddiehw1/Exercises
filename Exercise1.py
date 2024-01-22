@@ -21,7 +21,7 @@ print(leibniz_error(leibniz_approximation(1000)))
 print(leibniz_error(leibniz_approximation(10000)))
 
 
-start_time = time.time()
+
 #1c
 def leibniz_tolerance(error_tolerance):
     N = 1
@@ -31,9 +31,9 @@ def leibniz_tolerance(error_tolerance):
         if error < error_tolerance:
             break
         N += 1
-        print(N)
     return N
-print(leibniz_tolerance(1e-5))
+
+print(leibniz_tolerance(1e-7))
 
     
 
